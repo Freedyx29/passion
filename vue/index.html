@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ma passion</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="nav container">
+                <a href="index.html" class="logo">
+                    <img src="../img/SR/Searocks.png" alt="Logo" style="height: 100px;">
+                </a>
+        
+                <input type="checkbox" name="" id="menu">
+                <label for="menu" class="menu-icon">
+                    <i class='bx bx-menu' id="menu-icon"></i>
+                </label>
+        
+                <ul class="navbar">
+                    <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                    <li><a href="histoire.html" class="nav-link">Histoire</a></li>
+                    <li><a href="groupes.html" class="nav-link">Groupes</a></li>
+                </ul>
+        
+                <a href="musique.html" class="btn">Musique</a>
+            </div>
+        </header>
+
+        <section class="home container" id="home">
+            <div class="home-text">
+                <h1>METAL & HARDROCK<br>
+                    <span class="highlight">Découvrez les légendes du rock</span><br>
+                    <span class="band-names">AC/DC • METALLICA • IRON MAIDEN</span>
+                </h1>
+                <a href="groupes.html" class="btn">Explorez les groupes</a>
+            </div>
+        </section>
+
+        <section class="about container" id="#">
+            <div class="about-img">
+                <img src="../img/babymetal/bm.png" alt="">
+            </div>
+            <div class="about-text">
+                <span>Histoire</span><br><br>
+                <h2>METAL !<br> HARDROCK !</h2>
+                <p>Plongez dans l'univers du <strong>Métal</strong> & du <strong>Hardrock</strong></p>
+                <p>Le métal et le hard rock sont nés dans les années 1960-70, mêlant puissance sonore, riffs électriques et thèmes captivants. Découvrez leur évolution, des pionniers comme Black Sabbath et Led Zeppelin aux icônes modernes.</p><br>
+                <a href="histoire.html" class="btn">En savoir plus</a>
+            </div>
+        </section>
+
+        <section class="passion container" id="#">
+            <div class="box">
+                <i class='bx bx-music'></i>
+                <h3>POWER OF ROCK</h3>
+                <p>Ressentez la puissance des riffs qui ont marqué l'histoire</p>
+                <a href="musique.html" class="btn">Découvrir</a>
+            </div>
+        
+            <div class="box">
+                <i class='bx bx-disc'></i>
+                <h3>LÉGENDES DU METAL</h3>
+                <p>Explorez l'univers des groupes qui ont forgé le metal</p>
+                <a href="groupes.html" class="btn">Groupes</a>
+            </div>
+        
+            <div class="box">
+                <i class='bx bx-book'></i>
+                <h3>HISTOIRE</h3>
+                <p>Découvrez les débuts du Rock & du Métal</p>
+                <a href="histoire.html" class="btn">Histoire</a>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-container container">
+                <img src="../img/SR/Searocks.png" alt="Ma Passion Logo" class="footer-logo">
+                <div class="footer-box">
+                    <h3>Liens rapides</h3>
+                    <a href="histoire.html">Histoire</a>
+                    <a href="groupes.html">Groupes</a>
+                    <a href="musique.html">Musique</a>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Groupes cultes</h3>
+                    <a href="groupes.html">AC/DC</a>
+                    <a href="groupes.html">Linkin park</a>
+                    <a href="groupes.html">Babymetal</a>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Contact</h3>
+                    <a href="#">06 47 39 51 80</a>
+                    <a href="#">lukasgrimaud31@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.navbar');
+            
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle('active');
+            }
+            
+            window.onscroll = () => {
+                menu.classList.remove('bx-x');
+                navbar.classList.remove('active');
+            }
+        </script>
+    </body>
+</html>
